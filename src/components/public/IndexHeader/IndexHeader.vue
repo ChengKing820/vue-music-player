@@ -1,15 +1,15 @@
 <template>
   <div class="index-header">
     <Row type="flex" justify="center" class="code-row-bg">
-      <Col span="4">
+      <Col span="3">
       <div class="header-icon-block">
         <Icon type="ios-musical-notes-outline" />
       </div>
       </Col>
-      <Col span="16">
-      <search></search>
+      <Col span="18">
+      <Search></Search>
       </Col>
-      <Col span="4">
+      <Col span="3">
       <div class="header-icon-block">
         <Icon type="ios-headset-outline" />
       </div>
@@ -19,10 +19,10 @@
 </template>
 
 <script>
-import search from './search'
+import Search from './Search'
 export default {
   components: {
-    search: search
+    Search: Search
   },
   data () {
     return {
@@ -39,7 +39,7 @@ export default {
     width: 100%;
     height: 100%;
     text-align: center;
-    font-size: 30px;
+    font-size: 24px;
     color: #FFF;
   }
 

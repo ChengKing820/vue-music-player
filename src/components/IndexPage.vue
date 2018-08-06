@@ -4,8 +4,12 @@
       <Header :style='header_style'>
         <IndexHeader></IndexHeader>
       </Header>
-      <Content>Content</Content>
-      <Footer :style='footer_style'>Footer</Footer>
+      <Content :style="content_style">
+        <DisCovery></DisCovery>
+      </Content>
+      <Footer :style='footer_style'>
+        <IndexFooter></IndexFooter>
+      </Footer>
     </Layout>
 
   </div>
@@ -13,9 +17,13 @@
 
 <script>
 import IndexHeader from './public/IndexHeader'
+import IndexFooter from './public/IndexFooter'
+import DisCovery from './public/DisCovery'
 export default {
   components: {
-    IndexHeader: IndexHeader
+    IndexHeader: IndexHeader,
+    IndexFooter: IndexFooter,
+    DisCovery: DisCovery
   },
   data () {
     return {
@@ -26,14 +34,21 @@ export default {
         'height': '50px',
         'max-width': '768px',
         'padding': '0',
-        'line-height': '50px'
+        'line-height': '50px',
+        'z-index': '999'
+      },
+      content_style: {
+        'margin': '50px 0',
+        'background': '#FFF'
       },
       footer_style: {
         'position': 'fixed',
         'bottom': '0',
         'width': '100%',
         'height': '50px',
-        'max-width': '768px'
+        'max-width': '768px',
+        'padding': '0',
+        'line-height': '50px'
       }
     }
   }
