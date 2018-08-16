@@ -92,7 +92,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   .song-sheet-content{
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #f5f2f2;
     padding-bottom: 30px;
   }
 

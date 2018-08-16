@@ -3,11 +3,14 @@
     <Row type="flex" justify="center" class="code-row-bg">
       <Col span="3">
       <div class="header-icon-block">
-        <Icon type="ios-musical-notes-outline" />
+        <Icon v-if="r==='/'" type="ios-musical-notes-outline" />
       </div>
       </Col>
       <Col span="18">
-      <Search></Search>
+      <Search v-if="r==='/'"></Search>
+      <div class="header-title">
+        <p v-if="r==='/account'">账号</p>
+      </div>
       </Col>
       <Col span="3">
       <div class="header-icon-block">
@@ -24,10 +27,18 @@ export default {
   components: {
     Search: Search
   },
+  watch: {
+    $route: function () {
+      this.r = this.$route.path
+    }
+  },
   data () {
     return {
-
+      r: this.$route.path
     }
+  },
+  mounted: function () {
+    // console.log(this.r)
   }
 }
 
@@ -41,6 +52,12 @@ export default {
     text-align: center;
     font-size: 24px;
     color: #FFF;
+  }
+
+  .header-title{
+    font-size: 15px;
+    color: #FFF;
+    text-align: center;
   }
 
 </style>
