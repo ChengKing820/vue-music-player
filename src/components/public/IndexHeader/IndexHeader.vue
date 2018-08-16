@@ -10,6 +10,7 @@
       <Search v-if="r==='/'"></Search>
       <div class="header-title">
         <p v-if="r==='/account'">账号</p>
+        <p v-if="r==='/mine'">我的</p>
       </div>
       </Col>
       <Col span="3">
@@ -54,7 +55,7 @@ export default {
     color: #FFF;
   }
 
-  .header-title{
+  .header-title {
     font-size: 15px;
     color: #FFF;
     text-align: center;

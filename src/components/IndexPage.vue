@@ -8,11 +8,9 @@
 
 <script>
 
-import IndexFooter from './public/IndexFooter'
 import DisCovery from './public/DisCovery'
 export default {
   components: {
-    IndexFooter: IndexFooter,
     DisCovery: DisCovery
   },
   data () {
