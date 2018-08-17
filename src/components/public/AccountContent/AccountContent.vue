@@ -1,14 +1,17 @@
 <template>
   <div class="account-content">
     <AccountBase></AccountBase>
+    <AccountList></AccountList>
   </div>
 </template>
 
 <script>
 import AccountBase from './AccountBase'
+import AccountList from './AccountList'
 export default {
   components: {
-    AccountBase: AccountBase
+    AccountBase: AccountBase,
+    AccountList: AccountList
   },
   data () {
     return {
