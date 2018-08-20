@@ -28,7 +28,7 @@ export default {
         'width': '100%',
         'background': '#C20C0C',
         'height': '50px',
-        'max-width': '768px',
+        'max-width': '414px',
         'padding': '0',
         'line-height': '50px',
         'z-index': '999'
@@ -38,7 +38,7 @@ export default {
         'bottom': '0',
         'width': '100%',
         'height': '50px',
-        'max-width': '768px',
+        'max-width': '414px',
         'padding': '0',
         'line-height': '50px'
       }
@@ -55,7 +55,7 @@ export default {
     -moz-osx-font-smoothing: grayscale;
     color: #2c3e50;
     width: 100%;
-    max-width: 768px;
+    max-width: 414px;
     margin: 0 auto;
     overflow: hidden;
   }
